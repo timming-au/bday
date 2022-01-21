@@ -1,0 +1,18 @@
+body{
+    margin:0;
+    box-sizing:border-box;
+    overscroll-behavior: none;
+    overflow:hidden;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    caret-color:transparent;
+    font-weight: 100;
+}
+*{
+    cursor:none;
+}
+::selection{
+    color:white;
+    background:grey;
+}

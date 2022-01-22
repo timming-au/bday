@@ -20,8 +20,8 @@ import { onMount } from 'svelte';
             $store.cursor = "default"
         }
         // Set cursor position
-        cursorNode.style.left = e.clientX - 8 + "px"
-        cursorNode.style.top = e.clientY - 1 + "px"
+        cursorNode.style.transform = `translate(${e.clientX - 8},${e.clientY - 1})`
+        console.log(`translate(${e.clientX - 8},${e.clientY - 1})`)
     }
 </script>
 
@@ -39,7 +39,7 @@ import { onMount } from 'svelte';
         filter: drop-shadow(0 0 0.7rem white) drop-shadow(-0.2rem 0.3rem 0.1rem rgba(0,0,0,0.7));
     }
     #cursor{
-        transform: translateX(calc(8px - 0.1rem));
+        left: calc(8px - 0.1rem);
         z-index:99999;
         position:fixed;
         pointer-events: none;

@@ -6,18 +6,18 @@
 	let fps;
 	onMount(() => {
 		//dev
-		let t0 = 0, t1 = 0, deltaTime;
-		function updateCanvas(timestamp){
-            if(t0<=t1){
-                t0 = timestamp
-            }else if(t0>t1){
-                t1 = timestamp
-            }
-            deltaTime = Math.abs(t1-t0)
-            fps = Math.floor(1000000/deltaTime)/1000
-            requestAnimationFrame(updateCanvas)
-        }
-		requestAnimationFrame(updateCanvas)
+		// let t0 = 0, t1 = 0, deltaTime;
+		// function updateCanvas(timestamp){
+        //     if(t0<=t1){
+        //         t0 = timestamp
+        //     }else if(t0>t1){
+        //         t1 = timestamp
+        //     }
+        //     deltaTime = Math.abs(t1-t0)
+        //     fps = Math.floor(1000000/deltaTime)/1000
+        //     requestAnimationFrame(updateCanvas)
+        // }
+		// requestAnimationFrame(updateCanvas)
 
 		//DOM nodes
 		let nodeText = document.getElementById("text")
@@ -93,7 +93,7 @@
 
 </script>
 <div id="landing">
-	<p style="position:absolute; right:0; top:0; color:red;z-index:99999">{fps}</p>
+	<!-- <p style="position:absolute; right:0; top:0; color:red;z-index:99999">{fps}</p> -->
 	<div id="grain-container">
 		<div id="grain"></div>
 	</div>

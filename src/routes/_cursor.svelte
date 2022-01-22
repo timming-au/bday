@@ -21,7 +21,6 @@ import { onMount } from 'svelte';
         }
         // Set cursor position
         cursorNode.style.transform = `translate(${e.clientX - 8}px,${e.clientY - 1}px)`
-        console.log(`translate(${e.clientX - 8},${e.clientY - 1})`)
     }
 </script>
 

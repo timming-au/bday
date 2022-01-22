@@ -4,7 +4,7 @@
     import { onMount } from "svelte";
     import grained from "$lib/grained.min.js"
     import anime from "animejs"
-	import Typewriter from "typewriter-effect/dist/core"
+	import Typewriter from "typewriter-effect/dist/core.js"
     let messages, okMessage, emptyMessage, errorMessage, typewriterLabel, typewriterTitle, title, checkingText, inputBox;
     let letterTriangle, letter, letterContainer, letterTo;
     let rName, rMessage;

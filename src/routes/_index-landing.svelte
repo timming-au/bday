@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from "svelte";
-	import Typewriter from "typewriter-effect/dist/core"
+	import Typewriter from "typewriter-effect/dist/core.js"
 	import grained from "$lib/grained.min.js"
 	import anime from "animejs"
 	let fps;

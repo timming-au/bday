@@ -78,25 +78,6 @@
 		init()
 
 		//animations
-		///shadow
-		let currentShadow, nextShadow
-		function loopShadow(){
-			if(!currentShadow){
-				currentShadow = [Math.random() * 5 + 9, Math.random() * 2 + 5, Math.random() * 3 + 6, Math.random() * 2 + 3, Math.random() * 3 + 5, Math.random() * 2 + 3]
-			}
-			else{
-				currentShadow = nextShadow
-			}
-			nextShadow = [Math.random() * 5 + 10, Math.random() * 2 + 5, Math.random() * 3 + 7, Math.random() * 2 + 3, Math.random() * 3 + 6, Math.random() * 2 + 3]
-			anime({
-				targets: "#shadow-in",
-				boxShadow: [`0 0 ${currentShadow[0]}vw ${currentShadow[1]}vw inset rgba(25,26,26,1), 0 0 ${currentShadow[2]}vw ${currentShadow[3]}vw inset rgba(25,26,26,1), 0 0 ${currentShadow[4]}vw ${currentShadow[5]}vw inset rgba(25,26,26,1)`, `0 0 ${nextShadow[0]}vw ${nextShadow[1]}vw inset rgba(25,26,26,1), 0 0 ${nextShadow[2]}vw ${nextShadow[3]}vw inset rgba(25,26,26,1), 0 0 ${nextShadow[4]}vw ${nextShadow[5]}vw inset rgba(25,26,26,1)`],
-				duration: Math.random() * 500 + 400,
-				direction: "alternate",
-				complete: () => loopShadow()
-			})
-		}
-		loopShadow()
 		///blur
 		function loopBlur(){
 			let rand = Math.random() * 5 + 0.5

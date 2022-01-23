@@ -391,6 +391,11 @@
         }
     }
 </script>
+<svelte:head>
+    <title>Birthday!</title>
+    <meta name="description" content="Birthday webpage to celebrate for friends" />
+    <link rel="icon" href="/favicon.png" />
+</svelte:head>
 <div id="particles">
     <svelte:component
         this={particles}
